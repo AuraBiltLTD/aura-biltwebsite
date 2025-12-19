@@ -297,3 +297,19 @@ a:hover{opacity:.9}
   top: 50%;
   transform: translateY(-50%);
 }
+
+/* === FORCE LOGO HEADER TO PURE WHITE === */
+.topbar{
+  background: #ffffff;
+}
+
+/* Ensure logo area is visually white and clean */
+.brandrow{
+  background: #ffffff;
+}
+
+/* Optional: tighten vertical spacing so it feels like a banner */
+.brandrow{
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
