@@ -242,12 +242,12 @@ a:hover{opacity:.9}
   .h1{font-size:38px}
   .card{grid-column: span 6}
   .split{grid-template-columns:1fr}
-  .brandlogo{height:110px;background-size: 100% auto;}
+  .brandlogo{height:130px;background-size: 100% auto;}
 }
 @media (max-width: 560px){
   .h1{font-size:32px}
   .card{grid-column: span 12}
-  .brandlogo{height:96px;background-size: 100% auto;}
+  .brandlogo{height:120px;background-size: 100% auto;}
 }
 
 /* PREMIUM WHITE SERVICE CARDS */
@@ -259,12 +259,12 @@ a:hover{opacity:.9}
 
 /* Card headings */
 .card h3 {
-  color: #000000;
+  color: #FFFFFF;
 }
 
 /* Card body text */
 .card p {
-  color: #333333;
+  color: #000000;
 }
 
 /* Number / icon pill stays premium gold */
@@ -298,18 +298,4 @@ a:hover{opacity:.9}
   transform: translateY(-50%);
 }
 
-/* === FORCE LOGO HEADER TO PURE WHITE === */
-.topbar{
-  background: #ffffff;
-}
 
-/* Ensure logo area is visually white and clean */
-.brandrow{
-  background: #ffffff;
-}
-
-/* Optional: tighten vertical spacing so it feels like a banner */
-.brandrow{
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
