@@ -48,12 +48,12 @@ a:hover{opacity:.9}
 
 /* Banner logo as background so it can stretch without being tall */
 .brandlogo{
-  height:150px;                 /* adjust if needed */
+  height:150px;
   width:min(1540px, 100%);
-  background-image:url("logo.png");
+  background-image:url("logo1.png");
   background-repeat:no-repeat;
   background-position:center;
-  background-size: 100% auto;   /* stretched left-right, slim height */
+  background-size: 100% auto;
 }
 
 .nav{
