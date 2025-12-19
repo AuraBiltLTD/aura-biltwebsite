@@ -11,6 +11,7 @@
 
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
+
 body{
   font-family: "Segoe UI", Arial, sans-serif;
   background: var(--bg);
@@ -168,8 +169,11 @@ a:hover{opacity:.9}
   border-radius:14px;
   border:1px solid var(--gold);
   background: linear-gradient(180deg, #fff, #fbf6ea);
-  display:flex;align-items:center;justify-content:center;
-  font-weight:900;color: var(--gold2);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:900;
+  color: var(--gold2);
 }
 
 .split{
@@ -192,14 +196,19 @@ a:hover{opacity:.9}
   padding:0;
   list-style:none;
 }
+
 .list li{
   padding:10px 0;
   border-bottom:1px solid var(--line);
   color: var(--muted);
 }
+
 .list li:last-child{border-bottom:none}
 
-.small{color:var(--muted);line-height:1.7}
+.small{
+  color:var(--muted);
+  line-height:1.7
+}
 
 .footer{
   margin-top:30px;
@@ -207,6 +216,7 @@ a:hover{opacity:.9}
   background:#fff;
   padding:18px 0;
 }
+
 .footer .row{
   display:flex;
   justify-content:space-between;
@@ -221,6 +231,7 @@ a:hover{opacity:.9}
   display:grid;
   gap:12px;
 }
+
 .input, .textarea{
   width:100%;
   border:1px solid var(--line);
@@ -229,7 +240,9 @@ a:hover{opacity:.9}
   font:inherit;
   outline:none;
 }
+
 .textarea{min-height:120px;resize:vertical}
+
 .input:focus, .textarea:focus{
   border-color: var(--gold);
   box-shadow: 0 0 0 4px rgba(201,164,76,.14);
@@ -242,60 +255,35 @@ a:hover{opacity:.9}
   .h1{font-size:38px}
   .card{grid-column: span 6}
   .split{grid-template-columns:1fr}
-  .brandlogo{height:130px;background-size: 100% auto;}
+  .brandlogo{height:110px;background-size: 100% auto;}
 }
+
 @media (max-width: 560px){
   .h1{font-size:32px}
   .card{grid-column: span 12}
-  .brandlogo{height:120px;background-size: 100% auto;}
+  .brandlogo{height:96px;background-size: 100% auto;}
 }
 
 /* PREMIUM WHITE SERVICE CARDS */
-.card {
+.card{
   background: #ffffff;
   border: 2px solid var(--gold);
   box-shadow: 0 10px 28px rgba(0,0,0,.12);
 }
 
 /* Card headings */
-.card h3 {
-  color: #FFFFFF;
-}
-
-/* Card body text */
-.card p {
+.card h3{
   color: #000000;
 }
 
+/* Card body text */
+.card p{
+  color: #333333;
+}
+
 /* Number / icon pill stays premium gold */
-.iconpill {
+.iconpill{
   background: linear-gradient(180deg, #fff, #fbf6ea);
   border: 2px solid var(--gold);
   color: var(--gold2);
 }
-
-/* === LOGO WIDTH FIX (NO OTHER CHANGES) === */
-
-/* Allow logo to span full content width */
-.brandrow{
-  position: relative;
-}
-
-/* Make logo match content width */
-.brandlogo{
-  width: 100%;
-  max-width: 1100px;   /* same as .container content */
-  margin: 0 auto;
-  height: 130px;       /* keeps it slim */
-  background-size: contain; /* never crop */
-}
-
-/* Keep nav on top, right aligned */
-.nav{
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-
