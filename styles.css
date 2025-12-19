@@ -250,3 +250,26 @@ a:hover{opacity:.9}
   .brandlogo{height:96px;background-size: 100% auto;}
 }
 
+/* PREMIUM WHITE SERVICE CARDS */
+.card {
+  background: #ffffff;
+  border: 2px solid var(--gold);
+  box-shadow: 0 10px 28px rgba(0,0,0,.12);
+}
+
+/* Card headings */
+.card h3 {
+  color: #000000;
+}
+
+/* Card body text */
+.card p {
+  color: #333333;
+}
+
+/* Number / icon pill stays premium gold */
+.iconpill {
+  background: linear-gradient(180deg, #fff, #fbf6ea);
+  border: 2px solid var(--gold);
+  color: var(--gold2);
+}
