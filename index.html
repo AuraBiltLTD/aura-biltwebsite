@@ -1,113 +1,168 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aura&Bilt LTD</title>
-<style>
-  body {
-    margin: 0;
-    font-family: "Segoe UI", Arial, sans-serif;
-    background: #ffffff;
-    color: #000000;
-  }
 
-  .page-wrapper {
-    border: 6px solid #c9a44c;
-    min-height: 100vh;
-    box-sizing: border-box;
-  }
+  <style>
+    :root {
+      --gold: #c9a44c;
+      --black: #0b0b0b;
+      --white: #ffffff;
+      --text-light: #eaeaea;
+      --text-mid: #cfcfcf;
+    }
 
-  /* Banner-style header */
-  .site-header {
-    width: 100%;
-    height: 130px;                   
-    background-color: #ffffff;
-    background-image: url("logo.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% auto;       
-    border-bottom: 2px solid #c9a44c;
-  }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: var(--white);
+      color: #000;
+    }
 
-  main {
-    padding-top: 40px;
-  }
+    /* Gold trim around the entire page */
+    .page-wrapper {
+      border: 6px solid var(--gold);
+      min-height: 100vh;
+      box-sizing: border-box;
+      background: var(--white);
+    }
 
-  section {
-    padding: 60px 20px;
-    max-width: 900px;
-    margin: auto;
-    text-align: center;
-  }
+    /* WHITE HEADER BANNER (double height) */
+    .site-header {
+      width: 100%;
+      height: 260px; /* doubled height so logo stays fully visible */
+      background-color: var(--white);
+      background-image: url("logo.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 90% auto; /* stretched left to right, stays slim */
+      border-bottom: 2px solid var(--gold);
+    }
 
-  h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-  }
+    /* DARK BODY AREA */
+    .content-area {
+      background: var(--black);
+      color: var(--text-light);
+      padding: 60px 20px 80px;
+      border-top: 2px solid var(--gold);
+    }
 
-  p {
-    font-size: 17px;
-    line-height: 1.7;
-    color: #333333;
-  }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
 
-  ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 30px;
-  }
+    h2 {
+      font-size: 34px;
+      margin: 0 0 18px;
+      letter-spacing: 1px;
+      color: #ffffff;
+    }
 
-  ul li {
-    font-size: 18px;
-    margin: 12px 0;
-  }
+    p {
+      font-size: 17px;
+      line-height: 1.7;
+      color: var(--text-mid);
+      margin: 0 auto;
+      max-width: 760px;
+    }
 
-  footer {
-    padding: 40px 20px;
-    text-align: center;
-    font-size: 14px;
-    color: #666;
-    border-top: 1px solid #ddd;
-  }
-</style>
+    .spacer {
+      height: 70px;
+    }
 
+    .section-title {
+      font-size: 30px;
+      margin-bottom: 20px;
+      color: #ffffff;
+      letter-spacing: 1px;
+    }
 
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
 
+    ul li {
+      font-size: 18px;
+      margin: 14px 0;
+      color: #ffffff;
+    }
 
+    .contact p {
+      color: var(--text-mid);
+      margin: 10px 0;
+    }
+
+    footer {
+      background: var(--black);
+      color: #aaaaaa;
+      text-align: center;
+      padding: 30px 20px;
+      border-top: 2px solid var(--gold);
+      font-size: 14px;
+    }
+
+    /* Mobile tweaks */
+    @media (max-width: 600px) {
+      .site-header {
+        height: 220px;
+        background-size: 92% auto;
+      }
+
+      h2 {
+        font-size: 28px;
+      }
+
+      .section-title {
+        font-size: 26px;
+      }
+    }
+  </style>
 </head>
 
 <body>
   <div class="page-wrapper">
 
+    <!-- HEADER BANNER -->
     <header class="site-header"></header>
 
-    <main>
+    <!-- DARK CONTENT AREA -->
+    <div class="content-area">
+      <div class="container">
 
-      <section>
         <h2>Logistics, Precisely Built</h2>
         <p>
           Aura&Bilt LTD delivers reliable, efficient, and secure logistics solutions,
           built to support your business from origin to destination.
         </p>
-      </section>
 
-      <section>
-        <h2>Our Services</h2>
-        <ul>
-          <li>Freight Forwarding</li>
-          <li>Warehousing & Distribution</li>
-          <li>Last-Mile Delivery</li>
-          <li>Customs & Compliance</li>
-        </ul>
-      </section>
+        <div class="spacer"></div>
 
-      <section>
-        <h2>Contact Us</h2>
-        <p>Email: AuraBiltLTD@outlook.com</p>
-        <p>Phone: +00 000 0000</p>
-      </section>
+        <div class="services">
+          <div class="section-title">Our Services</div>
+          <ul>
+            <li>Freight Forwarding</li>
+            <li>Warehousing & Distribution</li>
+            <li>Last-Mile Delivery</li>
+            <li>Customs & Compliance</li>
+          </ul>
+        </div>
 
-    </main>
+        <div class="spacer"></div>
+
+        <div class="contact">
+          <div class="section-title">Contact Us</div>
+          <p>Email: <strong>AuraBiltLTD@outlook.com</strong></p>
+          <p>Phone: <strong>+00 000 0000</strong></p>
+        </div>
+
+      </div>
+    </div>
 
     <footer>
       © 2025 Aura&Bilt LTD
@@ -115,7 +170,4 @@
 
   </div>
 </body>
-
-
-
 </html>
