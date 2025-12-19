@@ -273,3 +273,27 @@ a:hover{opacity:.9}
   border: 2px solid var(--gold);
   color: var(--gold2);
 }
+
+/* === LOGO WIDTH FIX (NO OTHER CHANGES) === */
+
+/* Allow logo to span full content width */
+.brandrow{
+  position: relative;
+}
+
+/* Make logo match content width */
+.brandlogo{
+  width: 100%;
+  max-width: 1100px;   /* same as .container content */
+  margin: 0 auto;
+  height: 130px;       /* keeps it slim */
+  background-size: contain; /* never crop */
+}
+
+/* Keep nav on top, right aligned */
+.nav{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
