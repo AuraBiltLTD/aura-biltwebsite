@@ -309,3 +309,58 @@ a:hover{opacity:.9}
   border: 2px solid var(--gold);
   color: var(--gold2);
 }
+
+/* ===== CENTER HEADER CONTENT CLEANLY ===== */
+
+.topbar{
+  height:140px;
+  background:#0b0b0b;
+  border-bottom:2px solid var(--gold);
+  display:flex;
+  align-items:center;   /* vertical centering */
+}
+
+.brandrow{
+  width:100%;
+  display:flex;
+  align-items:center;   /* vertical centering */
+  justify-content:space-between;
+  position:relative;
+}
+
+/* BIG logo, but header stays slim */
+.brandlogo{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%, -50%);
+
+  height:260px;          /* controls logo size */
+  width:100%;
+  max-width:1500px;
+
+  background-image:url("logo1.png");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  pointer-events:none;
+}
+
+/* Keep nav clickable & centred */
+.nav{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  position:relative;
+  z-index:2;
+}
+
+/* Mobile tuning */
+@media (max-width: 900px){
+  .topbar{height:110px;}
+  .brandlogo{height:180px;}
+}
+@media (max-width: 560px){
+  .topbar{height:90px;}
+  .brandlogo{height:140px;}
+}
