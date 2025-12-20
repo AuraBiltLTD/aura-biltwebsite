@@ -251,19 +251,19 @@ a:hover{opacity:.9}
 }
 
 /* Responsive */
-@media (max-width: 900px){
+  @media (max-width: 900px){
   .brandrow{flex-direction:column;align-items:center}
   .nav{justify-content:center}
   .h1{font-size:38px}
   .card{grid-column: span 6}
   .split{grid-template-columns:1fr}
-  .brandlogo{height:110px;background-size: 100% auto;}
+  .brandlogo{height:220px;background-size: 120% auto;}
 }
 
 @media (max-width: 560px){
   .h1{font-size:32px}
   .card{grid-column: span 12}
-  .brandlogo{height:96px;background-size: 100% auto;}
+  .brandlogo{height:160px;background-size: 100% auto;}
 }
 
 /* PREMIUM WHITE SERVICE CARDS */
