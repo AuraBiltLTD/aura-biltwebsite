@@ -34,26 +34,36 @@ a:hover{opacity:.9}
 
 /* Top banner (white) */
 .topbar{
-  background:#fff;
+  background:#0b0b0b;
   border-bottom:2px solid var(--gold);
+  height:140px;              /* NORMAL header height */
+  position:relative;
+  overflow:hidden;
 }
+
 
 .brandrow{
+  position:relative;
+  height:100%;
   display:flex;
   align-items:center;
-  justify-content:space-between;
-  gap:20px;
-  padding:16px 0;
+  justify-content:flex-end;
 }
 
-/* Banner logo as background so it can stretch without being tall */
+
 .brandlogo{
-  height:500px;                 /* BIG, premium header */
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%, -50%);
+  height:300px;              /* BIG logo */
   width:100%;
+  max-width:1600px;
   background-image:url("logo1.png");
   background-repeat:no-repeat;
   background-position:center;
-  background-size: contain;     /* show full logo, no cropping */
+  background-size:contain;
+  pointer-events:none;       /* clicks pass through */
 }
 
 
@@ -64,6 +74,12 @@ a:hover{opacity:.9}
   flex-wrap:wrap;
   justify-content:flex-end;
 }
+
+.nav{
+  position:relative;
+  z-index:2;
+}
+
 
 .nav a{
   padding:10px 12px;
@@ -251,7 +267,9 @@ a:hover{opacity:.9}
 }
 
 /* Responsive */
-  @media (max-width: 900px){
+ @media (max-width: 900px){
+  .topbar{height:110px;}
+  .brandlogo{height:200px;}
   .brandrow{flex-direction:column;align-items:center}
   .nav{justify-content:center}
   .h1{font-size:38px}
@@ -261,6 +279,8 @@ a:hover{opacity:.9}
 }
 
 @media (max-width: 560px){
+  .topbar{height:90px;}
+  .brandlogo{height:150px;}
   .h1{font-size:32px}
   .card{grid-column: span 12}
   .brandlogo{height:160px;background-size: 100% auto;}
