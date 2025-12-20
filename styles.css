@@ -353,7 +353,9 @@ a:hover{opacity:.9}
   gap:14px;
   position:relative;
   z-index:2;
+  margin-left:auto;   /* pushes nav to the right */
 }
+
 
 /* Mobile tuning */
 @media (max-width: 900px){
