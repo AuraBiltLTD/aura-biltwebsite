@@ -318,3 +318,21 @@ a:hover{opacity:.9}
   .card{grid-column:span 12}
 }
 
+/* ===== MAKE HEADER NAV LINKS VISIBLE ON DARK HEADER ===== */
+.topbar{
+  color:#fff;                 /* makes inherited text white inside header */
+}
+
+.nav a{
+  color:#fff;                 /* Home/Services/About become visible */
+  border-color: rgba(201,164,76,.55); /* optional: subtle gold outline so you can see pills */
+}
+
+.nav a:hover{
+  border-color: var(--gold);
+}
+
+/* keep CTA readable (black text on light button) */
+.nav a.cta{
+  color:#0b0b0b;
+}
